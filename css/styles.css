@@ -1,0 +1,177 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**  Reset para REMS -62.5% = 10px de 16px  **/
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+ :root {
+    --orange-color: rgb(236, 118, 71);
+    --text-color: rgb(97, 96, 96);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ----------------- banner ---------------*/
+
+.banner-container {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    background-color: #353535dc;
+    height: 100vh;
+    color: white;
+}
+
+.banner-container__barra {
+    display: flex;
+    justify-content: space-around;
+    background-color: #df9a4b;
+}
+
+.banner-container__barra p {
+    margin: 1rem auto;
+}
+
+.banner-container__barra a {
+    font-size: 1.7rem;
+    color: black;
+}
+
+.whats a {
+    color: rgb(51, 161, 51);
+}
+
+.banner__title {
+    border-left: 5px solid #df9a4b;
+    margin: 0px 3rem;
+}
+
+.banner__title h1 {
+    font-size: 4rem;
+    padding-left: 5%;
+}
+
+.banner__services {
+    margin-top: 10rem;
+}
+
+.banner__services li {
+    color: #df9a4b;
+    font-size: 2.1rem;
+    margin: 2rem auto;
+}
+
+.banner__services img {
+    width: 10%;
+}
+
+.banner__button button {
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.096);
+    border: 1px solid #df9a4b;
+    border-radius: 50%;
+    display: block;
+    margin: 10rem auto;
+    padding: 3rem;
+    outline: none;
+}
+
+.años h2 {
+    font-size: 2.5rem;
+    margin: 2rem 6rem 2rem 2rem;
+}
+
+.años h2::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #df9a4b;
+    margin-top: 1rem;
+}
+
+.años p {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+}
+
+.diseño {
+    background-color: #f2f3ea;
+}
+
+.diseño h2 {
+    font-size: 2.5rem;
+    margin: 2rem 6rem 2rem 2rem;
+    padding-top: 2rem;
+}
+
+.diseño h2::after {
+    content: '';
+    display: block;
+    width: 10rem;
+    height: .5rem;
+    background-color: #df9a4b;
+    margin-top: 1rem;
+}
+
+.diseño p {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+}
+
+.diseño__list {
+    background-image: url(../img/prueba.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    background-color: #353535dc;
+    height: 40vh;
+    color: white;
+}
+
+.diseño__list ul {
+    padding: 0;
+}
+
+.diseño__list ul>li {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.services h2 {
+    padding: 1rem;
+    margin: 1rem 10rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 5px solid #df9a4b;
+}
+
+.services p {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+}
