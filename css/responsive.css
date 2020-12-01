@@ -1,0 +1,485 @@
+/* smatphones */
+
+@media(max-width:480px) {}
+
+
+/* smatphones to tablets */
+
+@media(min-width:481px) and (max-width:767px) {}
+
+
+/* tablets */
+
+@media(min-width:768px) and (max-width:959px) {
+    /* menu ----*/
+    .logo h3 {
+        font-size: 3rem;
+    }
+    .line-1,
+    .line-2,
+    .line-3 {
+        width: 5rem;
+        height: 0.5rem;
+        background-color: black;
+        margin: 0.6rem 1em;
+        transition: 0.1s ease;
+    }
+    .changeline-1 {
+        transform: rotate(45deg) translate(2px, -2px);
+    }
+    .frame-menu a {
+        font-size: 7rem;
+    }
+    .frame-menu li {
+        padding: 8rem;
+        text-align: center;
+    }
+    /* ----------------- banner ---------------*/
+    .banner-container__barra a {
+        font-size: 2.5rem;
+    }
+    .banner__title h1 {
+        font-size: 5rem;
+    }
+    .banner__services li {
+        color: #df9a4b;
+        font-size: 4rem;
+        margin: 3rem auto;
+    }
+    .banner__services img {
+        width: 15%;
+    }
+    .banner__button button {
+        font-size: 4rem;
+        margin: 0 auto;
+        padding: 5rem;
+    }
+    /* ------------ años ----------*/
+    .años h2 {
+        font-size: 4rem;
+    }
+    .años h2::after {
+        content: '';
+        display: block;
+        width: 20rem;
+        height: .7rem;
+    }
+    .años p {
+        font-size: 3rem;
+    }
+    /* -------------- diseño -----------*/
+    .diseño h2 {
+        font-size: 4rem;
+    }
+    .diseño h2::after {
+        content: '';
+        display: block;
+        width: 15rem;
+        height: .7rem;
+    }
+    .diseño p {
+        font-size: 3rem;
+        padding: 1rem 2rem;
+    }
+    .diseño__list ul>li {
+        font-size: 3rem;
+        padding: 3rem;
+    }
+    /* -------------- servicios ---------------*/
+    .services h2 {
+        margin: 1rem 15rem;
+        font-size: 4rem;
+        border-bottom: 8px solid #df9a4b;
+    }
+    .services p {
+        font-size: 3rem;
+    }
+    /*slide */
+    .slider-container {
+        padding: 8rem;
+    }
+    .dot-nav {
+        width: 15px;
+        height: 15px;
+    }
+    /* ---- cotizacion ----*/
+    .cotizacion {
+        background-color: var(--orange-color);
+    }
+    .cotizacion h4 {
+        font-size: 4rem;
+        text-align: center;
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .cotizacion button {
+        font-size: 4rem;
+    }
+    /* --- galeria ----*/
+    .trabajos h4 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .trabajos p {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .gallery-card {
+        display: block;
+        text-align: center;
+    }
+    /* ---------- footer ----------*/
+    .footer h5 {
+        font-size: 3rem;
+    }
+    .footer li {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    .footer p {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .footer p:last-child {
+        padding-bottom: 1rem;
+    }
+}
+
+
+/* desktop */
+
+@media(min-width:960px) and (max-width:1199px) {
+    /* ----------------- banner ---------------*/
+    .banner-container__barra a {
+        font-size: 3.5rem;
+    }
+    .banner__title {
+        border-left: 10px solid #df9a4b;
+        margin: 0px 6rem;
+    }
+    .banner__title h1 {
+        font-size: 7rem;
+    }
+    .banner__services {
+        margin-top: 0rem;
+    }
+    .banner__services li {
+        color: #df9a4b;
+        font-size: 4rem;
+        margin: 2rem auto;
+    }
+    .banner__services img {
+        width: 10%;
+    }
+    .banner__button button {
+        font-size: 5rem;
+        margin: 8rem auto;
+        padding: 3rem;
+    }
+    /* ----- menu -----*/
+    .barra-menu {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        background-color: #df9a4b;
+        justify-content: space-around;
+    }
+    .nav h3 {
+        font-size: 3.5rem;
+        margin: 0;
+        padding: 2rem;
+        vertical-align: top;
+    }
+    .lista {
+        display: flex;
+        align-items: center;
+    }
+    .lista a {
+        padding: 0 2rem;
+        font-size: 3rem;
+        color: black;
+    }
+    /* ------------ años ----------*/
+    .años h2 {
+        font-size: 5rem;
+    }
+    .años h2::after {
+        content: '';
+        display: block;
+        width: 20rem;
+        height: .7rem;
+    }
+    .años p {
+        font-size: 2.8rem;
+    }
+    /* -------------- diseño -----------*/
+    .diseño h2 {
+        font-size: 5rem;
+    }
+    .diseño h2::after {
+        content: '';
+        display: block;
+        width: 15rem;
+        height: .7rem;
+    }
+    .diseño p {
+        font-size: 2.8rem;
+        padding: 1rem 2rem;
+    }
+    .diseño__list ul>li {
+        font-size: 5rem;
+        padding: 4rem;
+    }
+    /* -------------- servicios ---------------*/
+    .services h2 {
+        margin: 1rem 15rem;
+        font-size: 5rem;
+        border-bottom: 8px solid #df9a4b;
+    }
+    .services p {
+        font-size: 2.8rem;
+    }
+    /* --- slide ----*/
+    .slider-container {
+        padding: 10rem;
+    }
+    .dot-nav {
+        width: 15px;
+        height: 15px;
+    }
+    .slide img {
+        height: 40rem;
+        width: 100%;
+    }
+    /* ---- cotizacion ----*/
+    .cotizacion {
+        background-color: var(--orange-color);
+    }
+    .cotizacion h4 {
+        font-size: 4rem;
+        text-align: center;
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .cotizacion button {
+        font-size: 4rem;
+    }
+    /* --- galeria ----*/
+    .trabajos h4 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .trabajos p {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .gallery-card {
+        display: block;
+        text-align: center;
+    }
+    /* ---------- footer ----------*/
+    .footer h5 {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 1rem;
+        margin: 1rem;
+    }
+    .footer ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+    .footer li {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    .footer p {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .footer p:last-child {
+        padding-bottom: 1rem;
+    }
+}
+
+
+/* large display */
+
+@media(min-width:1200px) {
+    /* ----------------- banner ---------------*/
+    .banner-container__barra a {
+        font-size: 3.5rem;
+    }
+    .banner__title {
+        border-left: 10px solid #df9a4b;
+        margin: 0px 6rem;
+    }
+    .banner__title h1 {
+        font-size: 8rem;
+    }
+    .banner__services {
+        margin-top: 8rem;
+    }
+    .banner__services li {
+        color: #df9a4b;
+        font-size: 3rem;
+        margin: 6rem auto;
+    }
+    .banner__services img {
+        width: 5%;
+    }
+    .banner__button button {
+        font-size: 3rem;
+        margin: 7rem auto;
+        padding: 3rem;
+    }
+    /* ----- menu -----*/
+    .barra-menu {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        background-color: #df9a4b;
+        justify-content: space-around;
+    }
+    .nav h3 {
+        font-size: 3.5rem;
+        margin: 0;
+        padding: 2rem;
+        vertical-align: top;
+    }
+    .lista {
+        display: flex;
+        align-items: center;
+    }
+    .lista a {
+        padding: 0 2rem;
+        font-size: 3rem;
+        color: black;
+        transition: all 0.3s ease;
+    }
+    .lista a:hover {
+        background-color: rgb(240, 234, 240);
+    }
+    /* ------------ años ----------*/
+    .años {
+        margin: auto 4rem;
+    }
+    .años h2 {
+        font-size: 5rem;
+    }
+    .años h2::after {
+        content: '';
+        display: block;
+        width: 20rem;
+        height: .7rem;
+    }
+    .años p {
+        font-size: 2.8rem;
+        margin: 4rem 7rem;
+    }
+    /* -------------- diseño -----------*/
+    .diseño h2 {
+        font-size: 5rem;
+        margin: auto 6rem;
+    }
+    .diseño h2::after {
+        content: '';
+        display: block;
+        width: 15rem;
+        height: .7rem;
+    }
+    .diseño p {
+        font-size: 2.8rem;
+        padding: 1rem 12rem;
+    }
+    .diseño__list {
+        background-image: url(../img/trabajotablaroca_auto_x2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: soft-light;
+        background-attachment: fixed;
+        background-color: #353535dc;
+        height: 100vh;
+        color: white;
+    }
+    .diseño__list ul>li {
+        font-size: 5rem;
+        padding: 6rem;
+    }
+    /* -------------- servicios ---------------*/
+    .services h2 {
+        margin: 1rem 15rem;
+        font-size: 5rem;
+        border-bottom: 8px solid #df9a4b;
+    }
+    .services p {
+        font-size: 2.8rem;
+        margin: 4rem 7rem;
+    }
+    /* ---- cotizacion ----*/
+    .cotizacion {
+        background-color: var(--orange-color);
+    }
+    .cotizacion h4 {
+        font-size: 4rem;
+        text-align: center;
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .cotizacion button {
+        font-size: 4rem;
+    }
+    /* slide */
+    .slider-container {
+        padding: 5rem 30rem;
+    }
+    .dot-nav {
+        width: 15px;
+        height: 15px;
+    }
+    .slide img {
+        height: 50rem;
+        width: 100%;
+    }
+    /* --- galeria ----*/
+    .trabajos h4 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .trabajos p {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .gallery-card {
+        display: block;
+        text-align: center;
+    }
+    /* ---------- footer ----------*/
+    .footer h5 {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 1rem;
+        margin: 1rem;
+    }
+    .footer ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+    .footer li {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    .footer p {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .footer p:last-child {
+        padding-bottom: 1rem;
+    }
+}

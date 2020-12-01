@@ -12,7 +12,7 @@ html {
 }
 
  :root {
-    --orange-color: rgb(236, 118, 71);
+    --orange-color: #df9a4b;
     --text-color: rgb(97, 96, 96);
 }
 
@@ -29,6 +29,131 @@ a {
 
 ul {
     list-style: none;
+}
+
+
+/* -------- boton whast -----------------*/
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+
+/* ---- slider ----*/
+
+.slider-container {
+    padding: 3rem;
+}
+
+.center_y {
+    position: relative;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.center_x {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: -9999;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+}
+
+.slide img {
+    height: 25rem;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-arrow {
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    position: absolute;
+}
+
+#arrow-prev {
+    left: 20px;
+    top: 7.5rem;
+}
+
+#arrow-next {
+    right: 20px;
+    top: 7.5rem;
+}
+
+#dots-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+}
+
+.dot-nav {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 0 8px;
+    border: 2px solid #d6d6d6;
+}
+
+.dot-nav:hover {
+    background-color: #d6d6d6;
+}
+
+.active-dot {
+    background-color: #d6d6d6;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: .9s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 
@@ -97,7 +222,116 @@ ul {
     margin: 10rem auto;
     padding: 3rem;
     outline: none;
+    transition: all 0.3s ease;
 }
+
+.banner__button button:hover {
+    background-color: #df9a4b;
+}
+
+
+/* ----- menu mobile --------*/
+
+.nav {
+    display: none;
+}
+
+.burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+    z-index: 111;
+    background-color: var(--orange-color);
+    color: black;
+}
+
+.burger-menu-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo h3 {
+    font-size: 1.5rem;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    width: 3.5rem;
+    height: 0.3rem;
+    background-color: black;
+    margin: 0.6rem 1em;
+    transition: 0.1s ease;
+}
+
+.changeline-1 {
+    background-color: #0f1111;
+    transition: 0.3s ease-in;
+    transform: rotate(45deg) translate(0px, -2px);
+    position: absolute;
+}
+
+.changeline-2 {
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.changeline-3 {
+    background-color: #0f1111;
+    transition: 0.3s ease;
+    transform: rotate(-46deg) translate(12px, -10px);
+    position: absolute;
+}
+
+.frame-menu {
+    overflow: hidden;
+    display: none;
+    transform: scale(0);
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.frame-menu ul {
+    padding: 0;
+}
+
+.frame-menu a {
+    text-align: center;
+    color: var(--orange-color);
+    font-size: 4rem;
+}
+
+.frame-menu li {
+    padding: 5rem;
+    text-align: center;
+}
+
+.frame-menu-active {
+    display: block;
+    transform: scale(1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.barra-menu-active {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    top: 0;
+}
+
+
+/* ------------ años ----------*/
 
 .años h2 {
     font-size: 2.5rem;
@@ -117,6 +351,9 @@ ul {
     padding: 1rem 2rem;
     font-size: 1.8rem;
 }
+
+
+/* -------------- diseño -----------*/
 
 .diseño {
     background-color: #f2f3ea;
@@ -143,7 +380,7 @@ ul {
 }
 
 .diseño__list {
-    background-image: url(../img/prueba.jpg);
+    background-image: url(../img/trabajotablaroca3_auto_x2.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -163,6 +400,9 @@ ul {
     text-align: center;
 }
 
+
+/* -------------- servicios ---------------*/
+
 .services h2 {
     padding: 1rem;
     margin: 1rem 10rem;
@@ -174,4 +414,94 @@ ul {
 .services p {
     padding: 1rem 2rem;
     font-size: 1.8rem;
+}
+
+
+/* ---- cotizacion ----*/
+
+.cotizacion {
+    background-color: var(--orange-color);
+}
+
+.cotizacion h4 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.cotizacion button {
+    background-color: transparent;
+    border: 3px solid white;
+    display: block;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.cotizacion button:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+.cotizacion__boton {
+    padding: 3rem;
+}
+
+
+/* ---- trabajos ---*/
+
+.trabajos h4 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.trabajos p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.trabajos-img {
+    margin: 4rem;
+}
+
+.trabajos-img img {
+    object-fit: cover;
+    object-fit: contain;
+}
+
+
+/* ---------- footer ----------*/
+
+.footer {
+    color: white;
+    background-color: rgb(64, 64, 65);
+}
+
+.footer h5 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    margin: 1rem;
+}
+
+.footer ul {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.footer li {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer p:last-child {
+    padding-bottom: 1rem;
 }
