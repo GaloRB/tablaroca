@@ -445,7 +445,7 @@
         height: 50rem;
         width: 100%;
     }
-    /* --- galeria ----*/
+    /* ---trabajos  galeria ----*/
     .trabajos h4 {
         font-size: 4rem;
         text-align: center;
@@ -457,6 +457,12 @@
     .gallery-card {
         display: block;
         text-align: center;
+    }
+    .trabajos button {
+        font-size: 4rem;
+    }
+    .trabajos button:hover {
+        background-color: rgba(226, 164, 29, 0.466);
     }
     /* ---------- footer ----------*/
     .footer h5 {
